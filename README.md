@@ -1,5 +1,4 @@
-
-#Thanks [@_sjon](https://twitter.com/_sjon) for awesome website.
+#Thanks [@_sjon](https://twitter.com/_sjon/) for awesome website.
 
 ## Run on 3v4l.org
 
