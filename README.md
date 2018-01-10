@@ -1,2 +1,3 @@
-# 3v4l.org
-Chrome Extension to select php and execute on http://3v4l.org website.
+# Run on 3v4l.org
+
+Chrome Extension to help developers to select code and run code at 3v4l.org by selecting `run on 3v4l.org` option in mouse right click menu.
