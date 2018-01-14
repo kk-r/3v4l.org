@@ -16,13 +16,19 @@ chrome.extension.onMessage.addListener(
 
 
   createNewEntry = function(word){
-    console.log(word.selectionText);
     var selectedString = word.selectionText;
     selectedString = validateString(selectedString);
-    console.log(selectedString);
-    console.log(encodeURIComponent(selectedString));
-    var encoded = encodeURIComponent(selectedString).replace(/%3B%20/g, "%3B%20%0D%0A").replace(/%20|%C2%A0/g, "+");
-    console.log(encoded);
+    var encoded = encodeURIComponent(selectedString);
+    var matches = {
+      '%3B%20': '%3B%20%0D%0A',
+      '%7D': '%7D%0D%0A',
+      '%7B': '%7B%0D%0A',
+      '%20': '+',
+      '%C2%A0': '+'
+    };
+    encoded = encoded.replace(/(%3B%20|%7D|%7B|%20|%C2%A0)/g, function ($0){
+      return matches[$0] != undefined ? matches[$0] : $0;
+    });
     createEntry(encoded);
   }
 

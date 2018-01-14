@@ -1,4 +1,4 @@
-> **Note:** Thanks **[@_sjon](https://twitter.com/_sjon/ "target=_blank")** for awesome website. It's not OFFICIAL plugin from 3v4l.org.
+> **Note:** Thanks **[@_sjon](https://twitter.com/_sjon/  "title" target="_blank")** for awesome website. It's not OFFICIAL plugin from 3v4l.org.
 
 ## Run on 3v4l.org
 
